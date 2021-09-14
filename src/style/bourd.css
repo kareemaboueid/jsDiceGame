@@ -1,0 +1,70 @@
+.game__bourd {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10px;
+    height: 100%;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+}
+
+.game__bourd-dicePanal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.game__bourd-dicePanal .dice {
+    width: 8rem;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 13px -1px #000;
+    object-fit: cover;
+}
+
+.game__bourd-dicePanal .winner-name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.game__bourd-btnPanal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 2rem;
+    width: 30%;
+}
+
+.game__bourd-btnPanal button {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.game__bourd-btnPanal .info {
+    border: 0.1rem solid #fff;
+    background: transparent;
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 50rem;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    -ms-border-radius: 50rem;
+    -o-border-radius: 50rem;
+}

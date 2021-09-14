@@ -1,0 +1,60 @@
+.game__player0,
+.game__player1 {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #794c11;
+    color: #eee;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+.game__player0 {
+    bottom: 0;
+}
+.game__player1 {
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.game__player0-name,
+.game__player1-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.game__player0-scorePanal,
+.game__player1-scorePanal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.game__player0-scorePanal .points,
+.game__player0-scorePanal .highscore,
+.game__player1-scorePanal .points,
+.game__player1-scorePanal .highscore {
+    font-size: 1.5rem;
+    background-color: #22262a78;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}

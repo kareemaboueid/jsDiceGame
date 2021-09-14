@@ -1,0 +1,28 @@
+.game__rules {
+    position: absolute;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.game__rules h1 {
+    font-size: 2.8rem;
+}
+
+.game__rules p {
+    font-size: 1.6rem;
+}
+
+.game__rules button {
+    padding: 1rem 3rem;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A simple dice game" />
+    <meta name="author" content="Kareem Mohamed, karimabo3id@hotmail.com" />
+    <meta name="date" content="Feb. 18, 2021" />
+    <link rel="stylesheet" href="/src/style/main.css" />
+    <link rel="shortcut icon" href="/public/images/dice-5.png" type="image/png">
+    <title>Dice Game | by Kareem Aboeid</title>
+</head>
+
+<body>
+    <!-- Game section strat -->
+    <div class="game" id="Game">
+
+        <!-- Game Rules strat -->
+        <div class="game__rules" id="rules">
+            <h1>Game Rules</h1>
+            <p>
+                - When player click Play, the sice rolls, and can get points from dice dots.<br><br>
+                - When player click Hold, they can save collected points in highscore panal,
+                and switch turn to the other player.<br><br>
+                - Each player can keep their turn ONLY when dice != 1,
+                if dice = 1 then player keep their points and switch turn.<br><br>
+                - If one player got 100 points or more they wen.
+            </p>
+            <button class="btn" id="exitRules">OK</button>
+        </div>
+        <!-- Game Rules end -->
+
+        <!-- Player 2 section strat -->
+        <div class="game__player1" id="Player1">
+            <!-- Player 2 name -->
+            <p class="game__player1-name">Player 2</p>
+            <!-- score panal -->
+            <div class="game__player1-scorePanal">
+                <!-- points -->
+                <div class="points">
+                    <p class="points-label">Points</p>
+                    <p class="points-counter" id="Player1-points">0</p>
+                </div>
+
+                <!-- highscore -->
+                <div class="highscore">
+                    <p class="highscore-label">Highscore</p>
+                    <p class="highscore-counter" id="Player1-highscore">0<span> /100</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Player 2 section end -->
+
+        <!-- Game Bourd section start -->
+        <div class="game__bourd" id="Bourd">
+            <!-- Dice panal -->
+            <div class="game__bourd-dicePanal">
+                <img class="dice" id="dice" src="../public/images/dice-1.png" alt="Playing dice" />
+                <p class="winner-name hidden"></p>
+            </div>
+            <!-- Butons panals -->
+            <div class="game__bourd-btnPanal">
+                <!-- Reset -->
+                <button class="btn" id="Reset">Try Again</button>
+                <!-- Roll -->
+                <button class="btn" id="Play">Play</button>
+                <!-- Hold -->
+                <button class="btn" id="Hold">Save & Switch</button>
+                <!-- info -->
+                <button class="btn info" id="info">i</button>
+            </div>
+        </div>
+        <!-- Game Bourd section end -->
+
+        <!-- Player 1 section strat -->
+        <div class="game__player0 player-active" id="Player0">
+            <!-- Player 1 name -->
+            <p class="game__player0-name">Player 1</p>
+            <!-- score panal -->
+            <div class="game__player0-scorePanal">
+
+                <!-- points -->
+                <div class="points">
+                    <p class="points-label">Points</p>
+                    <p class="points-counter" id="Player0-points">0</p>
+                </div>
+
+                <!-- highscore -->
+                <div class="highscore">
+                    <p class="highscore-label">Highscore</p>
+                    <p class="highscore-counter" id="Player0-highscore">0<span> /100</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Player 1 section strat -->
+
+    </div>
+    <!-- Game section end -->
+
+    <!-- javascript -->
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>
